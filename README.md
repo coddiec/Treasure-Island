@@ -61,11 +61,11 @@ if decision_1 == "left":
   decision_2 = input(f"You are now at a lake and can either swim or wait for a boat. Would you like to {act_c} or {act_d}?")  
   if decision_2  == "wait":
     decision_3 = input(f"You are in a mansion with many doors. One is {choice_e} , one is {choice_f}, and the other is {choice_g}. Would you like to go through the red door, blue door, or yellow door?")
-    if decision_3 == "red":
+    if decision_3 == choice_e:
       print("You have entered a firey room. Game Over")
-    elif decision_3 == "blue":
+    elif decision_3 == choice_f:
       print("You were eaten by beasts. Game Over.")
-    elif decision_3 == "yellow":
+    elif decision_3 == choice_g:
       print("You have discovered the treasure. You Win.")
     else:
       print("You've chosen a door that is not a choice. Try again.")
